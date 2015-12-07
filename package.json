@@ -1,0 +1,19 @@
+{
+  "name": "node-with-wordpress-rest-api",
+  "version": "1.0.0",
+  "description": "Node.js app using WordPress as the backend and REST API endpoint source. Matt Mullenweg referred to this as a \"reverse mullet\". Party up front. Business out back.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaelck/Node-with-WordPress-REST-API.git"
+  },
+  "author": "MichaelCK",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/michaelck/Node-with-WordPress-REST-API/issues"
+  },
+  "homepage": "https://github.com/michaelck/Node-with-WordPress-REST-API#readme"
+}
