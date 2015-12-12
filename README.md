@@ -1,2 +1,21 @@
 # Node-with-WordPress-REST-API
-Node.js app using WordPress as the backend and REST API endpoint source. Matt Mullenweg referred to this as a "reverse mullet". Party up front. Business out back.
+An example Node.js app using WordPress as the backend and REST API endpoint source. Matt Mullenweg referred to this as a "reverse mullet". Party up front. Business out back.
+
+## Getting up and running
+
+- Download or clone this repository
+- Navigate to the repository directory in the terminal
+- Run ```npm install```
+- Create a config file with the following command: ```touch config.js```
+- Modify the following sample to meet your needs and add it to your config.js file:
+
+```   
+var config = {};
+
+config.wpUrl = 'example.com';
+config.listen = 3000;
+
+module.exports = config;
+```
+- Run the app with the following command: ```node index.js```
+- Visit http://localhost:3000
