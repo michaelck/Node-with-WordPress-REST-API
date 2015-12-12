@@ -1,6 +1,11 @@
 # Node-with-WordPress-REST-API
 An example Node.js app using WordPress as the backend and REST API endpoint source. Matt Mullenweg referred to this as a "reverse mullet". Party up front. Business out back.
 
+## Requirements
+
+- WordPress (minimum v4.4) running the [WP REST API v2](http://v2.wp-api.org/) plugin
+- Node.js
+
 ## Getting up and running
 
 - Download or clone this repository
