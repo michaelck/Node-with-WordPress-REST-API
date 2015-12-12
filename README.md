@@ -28,7 +28,8 @@ Returns a single public WordPress post
 ```   
 var config = {};
 
-config.wpUrl = 'example.com';
+//Be sure to omit the protocol (in this case 'http') from wpURL value
+config.wpUrl = 'www.example.com';
 config.listen = 3000;
 
 module.exports = config;
