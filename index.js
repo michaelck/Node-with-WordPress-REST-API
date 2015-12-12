@@ -11,13 +11,16 @@ app.set('view engine', 'jade');
 
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Shared options
+var options = {
+host: config.wpUrl,
+port: 80,
+method: 'GET'
+};
+
 app.get('/',function(req,res){
-  var options = {
-  host: config.wpUrl,
-  port: 80,
-  path: '/wp-json/wp/v2/posts/',
-  method: 'GET'
-  };
+
+options.path = '/wp-json/wp/v2/posts/';
 
   http.request(options, function(resp) {
     var docs;
@@ -38,13 +41,8 @@ app.get('/',function(req,res){
 
 app.get('/:id',function(req,res){
 
-  var options = {
-  host: config.wpUrl,
-  port: 80,
-  path: '/wp-json/wp/v2/posts/' + req.params.id,
-  method: 'GET'
-  };
-  console.log(options.path);
+  options.path = '/wp-json/wp/v2/posts/' + req.params.id;
+
   http.request(options, function(resp) {
     var docs;
     resp.setEncoding('utf8');
@@ -57,7 +55,6 @@ app.get('/:id',function(req,res){
      });
      resp.on('end', function(){
        var jdocs = JSON.parse(docs);
-       console.log(jdocs);
        res.render('postID', {post:jdocs, title: "Single WordPress Post"});
      });
   }).end();
