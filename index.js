@@ -1,6 +1,8 @@
 var express = require('express'),
     path = require('path'),
-    jade = require('jade');
+    jade = require('jade'),
+    config = require('./config'),
+    http = require('http');
 
 var app = new express();
 
