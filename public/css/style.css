@@ -1,0 +1,21 @@
+dt {
+  float: left;
+  clear: left;
+  text-align: right;
+  font-weight: bold;
+}
+dt:after {
+  content: ":";
+}
+dd {
+  margin: 0 0 0 110px;
+  padding: 0 0 0.5em 0;
+}
+dt dl {
+}
+.subHeading{
+  text-align: left;
+}
+.subHeading:after{
+  content:normal;
+}

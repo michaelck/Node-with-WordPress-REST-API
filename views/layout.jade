@@ -1,0 +1,22 @@
+doctype html
+html
+    head
+        link(rel='stylesheet', href='/css/style.css')
+    body
+        h1 WordPress Posts
+        - for post in posts
+            dl
+                dt Post id
+                dd #{post.id}
+                dt Post date
+                dd #{post.date}
+                dt Post author
+                dd #{post.author}
+                dt Post slug
+                dd #{post.slug}
+                dt Post link
+                dd #{post.link}
+                dt Post title
+                dd !{post.title.rendered}
+                dt Post content
+                dd !{post.content.rendered}
