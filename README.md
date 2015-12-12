@@ -4,7 +4,18 @@ A basic example of a Node.js app using WordPress / WP REST API endpoints for the
 ## Requirements
 
 - WordPress (minimum v4.4) running the [WP REST API v2](http://v2.wp-api.org/) plugin
-- Node.js
+- [Node.js](https://nodejs.org/). The following modules are required:
+    - [Express](http://expressjs.com/) - Application framework
+    - [Jade](http://jade-lang.com/) - Node template language
+    - [Path](https://nodejs.org/docs/latest/api/path.html) - utilities for handling and transforming file paths
+    - [HTTP](https://nodejs.org/docs/latest/api/http.html)
+
+## Example Routes
+### [http://localhost:3000/](http://localhost:3000/)
+Returns all public posts on a WordPress site.
+
+### [http://localhost:3000/post-id-number](http://localhost:3000/)
+Returns a single public WordPress post
 
 ## Getting up and running
 
