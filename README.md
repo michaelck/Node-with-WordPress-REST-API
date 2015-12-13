@@ -10,13 +10,6 @@ A basic example of a Node.js app using WordPress / WP REST API endpoints for the
     - [Path](https://nodejs.org/docs/latest/api/path.html) - utilities for handling and transforming file paths
     - [HTTP](https://nodejs.org/docs/latest/api/http.html)
 
-## Example Routes
-### [http://localhost:3000/](http://localhost:3000/)
-Returns all public posts on a WordPress site.
-
-### [http://localhost:3000/post-id-number](http://localhost:3000/)
-Returns a single public WordPress post
-
 ## Getting up and running
 
 - Download or clone this repository
@@ -36,3 +29,10 @@ module.exports = config;
 ```
 - Run the app with the following command: ```node index.js```
 - Visit [http://localhost:3000](http://localhost:3000)
+
+## Example Routes
+### [http://localhost:3000/](http://localhost:3000/)
+Returns all public posts on a WordPress site.
+
+### [http://localhost:3000/post-id-number](http://localhost:3000/)
+Returns a single public WordPress post
